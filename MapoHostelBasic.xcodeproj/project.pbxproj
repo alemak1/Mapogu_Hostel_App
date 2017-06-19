@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD297E6A1EF3F4B700FDD144 /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD297E691EF3F4B700FDD144 /* ImageManager.m */; };
+		BD297E6D1EF3F64500FDD144 /* ImageKeyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */; };
+		BD2BE4E61EF4D2C0007B45F3 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE4E51EF4D2C0007B45F3 /* UserLocationViewController.m */; };
+		BD2BE4E91EF4D56C007B45F3 /* AppLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE4E81EF4D56C007B45F3 /* AppLocationManager.m */; };
+		BD2D2B411EF50B320078CA7F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2D2B401EF50B320078CA7F /* MapKit.framework */; };
+		BD2DF5A91EF672C1000A19E8 /* RoomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2DF5A81EF672C1000A19E8 /* RoomCollectionViewLayout.m */; };
+		BD2E52341EF662CF008FF026 /* HostelCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */; };
+		BD2E5B521EF56FC400B22DE5 /* contentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD2E5B511EF56FC400B22DE5 /* contentList.plist */; };
+		BD306F9C1EF76CF10015E952 /* ToHostelDirectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD306F9B1EF76CF10015E952 /* ToHostelDirectionsController.m */; };
+		BD315E851EF7A7E40006292D /* PlacemarksNearHostel.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */; };
+		BD315E871EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */; };
+		BD3165401EF8051D007870DA /* LocalSites.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31653F1EF8051D007870DA /* LocalSites.xcassets */; };
+		BD3869E41EF5666F008F0BFB /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E31EF5666F008F0BFB /* ScrollViewController.m */; };
+		BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E61EF5690C008F0BFB /* ScrollableContentController.m */; };
+		BD3C79F21EF395BE00B4651B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79F11EF395BE00B4651B /* main.m */; };
+		BD3C79F51EF395BE00B4651B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79F41EF395BE00B4651B /* AppDelegate.m */; };
+		BD3C79F81EF395BE00B4651B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79F71EF395BE00B4651B /* ViewController.m */; };
+		BD3C79FB1EF395BE00B4651B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3C79F91EF395BE00B4651B /* Main.storyboard */; };
+		BD3C79FE1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79FC1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld */; };
+		BD3C7A001EF395BE00B4651B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3C79FF1EF395BE00B4651B /* Assets.xcassets */; };
+		BD3C7A031EF395BE00B4651B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3C7A011EF395BE00B4651B /* LaunchScreen.storyboard */; };
+		BD3C7A0B1EF39AD100B4651B /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A0A1EF39AD100B4651B /* ModelViewController.m */; };
+		BD3C7A0E1EF39AFB00B4651B /* HostelPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A0D1EF39AFB00B4651B /* HostelPageViewController.m */; };
+		BD3C7A111EF3A21A00B4651B /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A101EF3A21A00B4651B /* DataViewController.m */; };
+		BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */; };
+		BDC5F70F1EF635BE001EEEC4 /* MainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */; };
+		BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */; };
+		BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEA1E471EF448A60019AADD /* PhotoListController.m */; };
+		BDEFD4E71EF6D5C4000571C7 /* DirectionRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E61EF6D5C4000571C7 /* DirectionRequestController.m */; };
+		BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */; };
+		BDF0CA631EF51CB400B53D56 /* MapRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0CA621EF51CB400B53D56 /* MapRouteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD2715931EF5176A008541ED /* Seoul.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Seoul.geojson; sourceTree = "<group>"; };
+		BD297E681EF3F4A000FDD144 /* ImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		BD297E691EF3F4B700FDD144 /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
+		BD297E6B1EF3F63800FDD144 /* ImageKeyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageKeyConstants.h; sourceTree = "<group>"; };
+		BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageKeyConstants.m; sourceTree = "<group>"; };
+		BD2BE4E41EF4D2AF007B45F3 /* UserLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
+		BD2BE4E51EF4D2C0007B45F3 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
+		BD2BE4E71EF4D535007B45F3 /* AppLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLocationManager.h; sourceTree = "<group>"; };
+		BD2BE4E81EF4D56C007B45F3 /* AppLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLocationManager.m; sourceTree = "<group>"; };
+		BD2D2B401EF50B320078CA7F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BD2D2B421EF50B690078CA7F /* MapoHostelBasic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapoHostelBasic.entitlements; sourceTree = "<group>"; };
+		BD2D2B431EF510ED0078CA7F /* SeoulCoverageFile.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = SeoulCoverageFile.geojson; sourceTree = "<group>"; };
+		BD2DF5A71EF672B6000A19E8 /* RoomCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomCollectionViewLayout.h; sourceTree = "<group>"; };
+		BD2DF5A81EF672C1000A19E8 /* RoomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewLayout.m; sourceTree = "<group>"; };
+		BD2E52321EF662C1008FF026 /* HostelCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostelCollectionViewController.h; sourceTree = "<group>"; };
+		BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostelCollectionViewController.m; sourceTree = "<group>"; };
+		BD2E5B511EF56FC400B22DE5 /* contentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contentList.plist; sourceTree = "<group>"; };
+		BD2F80D21EF68BE2007E843C /* RoomNameDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomNameDictionary.h; sourceTree = "<group>"; };
+		BD306F9A1EF76CDF0015E952 /* ToHostelDirectionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToHostelDirectionsController.h; sourceTree = "<group>"; };
+		BD306F9B1EF76CF10015E952 /* ToHostelDirectionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToHostelDirectionsController.m; sourceTree = "<group>"; };
+		BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlacemarksNearHostel.plist; sourceTree = "<group>"; };
+		BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlacemarksNearHostelDictionary.plist; sourceTree = "<group>"; };
+		BD31653F1EF8051D007870DA /* LocalSites.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LocalSites.xcassets; sourceTree = "<group>"; };
+		BD3869E21EF56661008F0BFB /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		BD3869E31EF5666F008F0BFB /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		BD3869E51EF568D3008F0BFB /* ScrollableContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollableContentController.h; sourceTree = "<group>"; };
+		BD3869E61EF5690C008F0BFB /* ScrollableContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollableContentController.m; sourceTree = "<group>"; };
+		BD3C79ED1EF395BE00B4651B /* MapoHostelBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapoHostelBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3C79F11EF395BE00B4651B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD3C79F31EF395BE00B4651B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD3C79F41EF395BE00B4651B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD3C79F61EF395BE00B4651B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD3C79F71EF395BE00B4651B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD3C79FA1EF395BE00B4651B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD3C79FD1EF395BE00B4651B /* MapoHostelBasic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MapoHostelBasic.xcdatamodel; sourceTree = "<group>"; };
+		BD3C79FF1EF395BE00B4651B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD3C7A021EF395BE00B4651B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD3C7A041EF395BE00B4651B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3C7A0A1EF39AD100B4651B /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		BD3C7A0C1EF39ADC00B4651B /* ModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		BD3C7A0D1EF39AFB00B4651B /* HostelPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostelPageViewController.m; sourceTree = "<group>"; };
+		BD3C7A0F1EF39B0800B4651B /* HostelPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostelPageViewController.h; sourceTree = "<group>"; };
+		BD3C7A101EF3A21A00B4651B /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		BD3C7A121EF3A22500B4651B /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		BD4C4D1C1EF7BF1D00B8FFBE /* ListLocationSelectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLocationSelectionController.h; sourceTree = "<group>"; };
+		BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLocationSelectionController.m; sourceTree = "<group>"; };
+		BDC5F70D1EF635AC001EEEC4 /* MainSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSplitViewController.h; sourceTree = "<group>"; };
+		BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSplitViewController.m; sourceTree = "<group>"; };
+		BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewController.m; sourceTree = "<group>"; };
+		BDC5F7131EF64818001EEEC4 /* RoomCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomCollectionViewController.h; sourceTree = "<group>"; };
+		BDEA1E461EF448980019AADD /* PhotoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListController.h; sourceTree = "<group>"; };
+		BDEA1E471EF448A60019AADD /* PhotoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListController.m; sourceTree = "<group>"; };
+		BDEFD4E51EF6D5B7000571C7 /* DirectionRequestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionRequestController.h; sourceTree = "<group>"; };
+		BDEFD4E61EF6D5C4000571C7 /* DirectionRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionRequestController.m; sourceTree = "<group>"; };
+		BDEFD4E81EF6DCE2000571C7 /* MapLocationSelectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapLocationSelectionController.h; sourceTree = "<group>"; };
+		BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationSelectionController.m; sourceTree = "<group>"; };
+		BDF0CA611EF51C9D00B53D56 /* MapRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapRouteViewController.h; sourceTree = "<group>"; };
+		BDF0CA621EF51CB400B53D56 /* MapRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD3C79EA1EF395BE00B4651B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2D2B411EF50B320078CA7F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD297E671EF3F48C00FDD144 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BD297E681EF3F4A000FDD144 /* ImageManager.h */,
+				BD297E691EF3F4B700FDD144 /* ImageManager.m */,
+				BD297E6B1EF3F63800FDD144 /* ImageKeyConstants.h */,
+				BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		BD2BE4E31EF4D281007B45F3 /* LocationServices */ = {
+			isa = PBXGroup;
+			children = (
+				BD2BE4E41EF4D2AF007B45F3 /* UserLocationViewController.h */,
+				BD2BE4E51EF4D2C0007B45F3 /* UserLocationViewController.m */,
+				BD2BE4E71EF4D535007B45F3 /* AppLocationManager.h */,
+				BD2BE4E81EF4D56C007B45F3 /* AppLocationManager.m */,
+			);
+			name = LocationServices;
+			sourceTree = "<group>";
+		};
+		BD2D2B3F1EF50B320078CA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD2D2B401EF50B320078CA7F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2E52311EF662A9008FF026 /* HostelCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD2E52321EF662C1008FF026 /* HostelCollectionViewController.h */,
+				BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */,
+			);
+			name = HostelCollectionViewController;
+			sourceTree = "<group>";
+		};
+		BD3869DD1EF54B02008F0BFB /* ScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD3869E21EF56661008F0BFB /* ScrollViewController.h */,
+				BD3869E31EF5666F008F0BFB /* ScrollViewController.m */,
+				BD3869E51EF568D3008F0BFB /* ScrollableContentController.h */,
+				BD3869E61EF5690C008F0BFB /* ScrollableContentController.m */,
+				BD2E5B511EF56FC400B22DE5 /* contentList.plist */,
+			);
+			name = ScrollViewController;
+			sourceTree = "<group>";
+		};
+		BD3869DE1EF552A7008F0BFB /* iMessageUtil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iMessageUtil;
+			sourceTree = "<group>";
+		};
+		BD3C79E41EF395BE00B4651B = {
+			isa = PBXGroup;
+			children = (
+				BD3C79EF1EF395BE00B4651B /* MapoHostelBasic */,
+				BD3C79EE1EF395BE00B4651B /* Products */,
+				BD2D2B3F1EF50B320078CA7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3C79EE1EF395BE00B4651B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3C79ED1EF395BE00B4651B /* MapoHostelBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD3C79EF1EF395BE00B4651B /* MapoHostelBasic */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C4D221EF7C4BB00B8FFBE /* PageViewControllerUtils */,
+				BD2E52311EF662A9008FF026 /* HostelCollectionViewController */,
+				BDC5F70C1EF63593001EEEC4 /* SplitViewController */,
+				BD3869DE1EF552A7008F0BFB /* iMessageUtil */,
+				BD3869DD1EF54B02008F0BFB /* ScrollViewController */,
+				BDF0CA601EF51C7200B53D56 /* MapRouteViewController */,
+				BD2D2B421EF50B690078CA7F /* MapoHostelBasic.entitlements */,
+				BD2BE4E31EF4D281007B45F3 /* LocationServices */,
+				BDEA1E451EF4486F0019AADD /* CollectionViewControllers */,
+				BD297E671EF3F48C00FDD144 /* Utility */,
+				BD3C79F31EF395BE00B4651B /* AppDelegate.h */,
+				BD3C79F41EF395BE00B4651B /* AppDelegate.m */,
+				BD3C79F61EF395BE00B4651B /* ViewController.h */,
+				BD3C79F71EF395BE00B4651B /* ViewController.m */,
+				BD3C79F91EF395BE00B4651B /* Main.storyboard */,
+				BD3C79FF1EF395BE00B4651B /* Assets.xcassets */,
+				BD3C7A011EF395BE00B4651B /* LaunchScreen.storyboard */,
+				BD3C7A041EF395BE00B4651B /* Info.plist */,
+				BD3C79FC1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld */,
+				BD3C79F01EF395BE00B4651B /* Supporting Files */,
+				BD2D2B431EF510ED0078CA7F /* SeoulCoverageFile.geojson */,
+				BD2715931EF5176A008541ED /* Seoul.geojson */,
+				BD31653F1EF8051D007870DA /* LocalSites.xcassets */,
+			);
+			path = MapoHostelBasic;
+			sourceTree = "<group>";
+		};
+		BD3C79F01EF395BE00B4651B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3C79F11EF395BE00B4651B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD4C4D1F1EF7BF6000B8FFBE /* ListLocationSelectionController */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C4D1C1EF7BF1D00B8FFBE /* ListLocationSelectionController.h */,
+				BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */,
+			);
+			name = ListLocationSelectionController;
+			sourceTree = "<group>";
+		};
+		BD4C4D201EF7BF7600B8FFBE /* ToHostelDirectionsController */ = {
+			isa = PBXGroup;
+			children = (
+				BD306F9A1EF76CDF0015E952 /* ToHostelDirectionsController.h */,
+				BD306F9B1EF76CF10015E952 /* ToHostelDirectionsController.m */,
+			);
+			name = ToHostelDirectionsController;
+			sourceTree = "<group>";
+		};
+		BD4C4D211EF7C48800B8FFBE /* MapLocationSelectionController */ = {
+			isa = PBXGroup;
+			children = (
+				BDEFD4E81EF6DCE2000571C7 /* MapLocationSelectionController.h */,
+				BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */,
+			);
+			name = MapLocationSelectionController;
+			sourceTree = "<group>";
+		};
+		BD4C4D221EF7C4BB00B8FFBE /* PageViewControllerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BD3C7A101EF3A21A00B4651B /* DataViewController.m */,
+				BD3C7A121EF3A22500B4651B /* DataViewController.h */,
+				BD3C7A0A1EF39AD100B4651B /* ModelViewController.m */,
+				BD3C7A0C1EF39ADC00B4651B /* ModelViewController.h */,
+				BD3C7A0D1EF39AFB00B4651B /* HostelPageViewController.m */,
+				BD3C7A0F1EF39B0800B4651B /* HostelPageViewController.h */,
+			);
+			name = PageViewControllerUtils;
+			sourceTree = "<group>";
+		};
+		BDC5F70C1EF63593001EEEC4 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDC5F70D1EF635AC001EEEC4 /* MainSplitViewController.h */,
+				BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */,
+				BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */,
+				BDC5F7131EF64818001EEEC4 /* RoomCollectionViewController.h */,
+				BD2DF5A71EF672B6000A19E8 /* RoomCollectionViewLayout.h */,
+				BD2DF5A81EF672C1000A19E8 /* RoomCollectionViewLayout.m */,
+				BD2F80D21EF68BE2007E843C /* RoomNameDictionary.h */,
+			);
+			name = SplitViewController;
+			sourceTree = "<group>";
+		};
+		BDEA1E451EF4486F0019AADD /* CollectionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDEA1E461EF448980019AADD /* PhotoListController.h */,
+				BDEA1E471EF448A60019AADD /* PhotoListController.m */,
+			);
+			name = CollectionViewControllers;
+			sourceTree = "<group>";
+		};
+		BDF0CA601EF51C7200B53D56 /* MapRouteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C4D211EF7C48800B8FFBE /* MapLocationSelectionController */,
+				BD4C4D201EF7BF7600B8FFBE /* ToHostelDirectionsController */,
+				BD4C4D1F1EF7BF6000B8FFBE /* ListLocationSelectionController */,
+				BDF0CA611EF51C9D00B53D56 /* MapRouteViewController.h */,
+				BDF0CA621EF51CB400B53D56 /* MapRouteViewController.m */,
+				BDEFD4E51EF6D5B7000571C7 /* DirectionRequestController.h */,
+				BDEFD4E61EF6D5C4000571C7 /* DirectionRequestController.m */,
+				BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */,
+				BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */,
+			);
+			name = MapRouteViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD3C79EC1EF395BE00B4651B /* MapoHostelBasic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3C7A071EF395BE00B4651B /* Build configuration list for PBXNativeTarget "MapoHostelBasic" */;
+			buildPhases = (
+				BD3C79E91EF395BE00B4651B /* Sources */,
+				BD3C79EA1EF395BE00B4651B /* Frameworks */,
+				BD3C79EB1EF395BE00B4651B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapoHostelBasic;
+			productName = MapoHostelBasic;
+			productReference = BD3C79ED1EF395BE00B4651B /* MapoHostelBasic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD3C79E51EF395BE00B4651B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = AlexMakedonski;
+				TargetAttributes = {
+					BD3C79EC1EF395BE00B4651B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T9J39WJJ9G;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BD3C79E81EF395BE00B4651B /* Build configuration list for PBXProject "MapoHostelBasic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD3C79E41EF395BE00B4651B;
+			productRefGroup = BD3C79EE1EF395BE00B4651B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3C79EC1EF395BE00B4651B /* MapoHostelBasic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD3C79EB1EF395BE00B4651B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3C7A031EF395BE00B4651B /* LaunchScreen.storyboard in Resources */,
+				BD3C7A001EF395BE00B4651B /* Assets.xcassets in Resources */,
+				BD2E5B521EF56FC400B22DE5 /* contentList.plist in Resources */,
+				BD315E851EF7A7E40006292D /* PlacemarksNearHostel.plist in Resources */,
+				BD315E871EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist in Resources */,
+				BD3C79FB1EF395BE00B4651B /* Main.storyboard in Resources */,
+				BD3165401EF8051D007870DA /* LocalSites.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD3C79E91EF395BE00B4651B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2E52341EF662CF008FF026 /* HostelCollectionViewController.m in Sources */,
+				BDEFD4E71EF6D5C4000571C7 /* DirectionRequestController.m in Sources */,
+				BD2BE4E91EF4D56C007B45F3 /* AppLocationManager.m in Sources */,
+				BD3C79F81EF395BE00B4651B /* ViewController.m in Sources */,
+				BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */,
+				BD3C7A0B1EF39AD100B4651B /* ModelViewController.m in Sources */,
+				BD297E6D1EF3F64500FDD144 /* ImageKeyConstants.m in Sources */,
+				BDC5F70F1EF635BE001EEEC4 /* MainSplitViewController.m in Sources */,
+				BD2BE4E61EF4D2C0007B45F3 /* UserLocationViewController.m in Sources */,
+				BD3C7A0E1EF39AFB00B4651B /* HostelPageViewController.m in Sources */,
+				BD3C7A111EF3A21A00B4651B /* DataViewController.m in Sources */,
+				BD3869E41EF5666F008F0BFB /* ScrollViewController.m in Sources */,
+				BD3C79F51EF395BE00B4651B /* AppDelegate.m in Sources */,
+				BD3C79FE1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld in Sources */,
+				BDF0CA631EF51CB400B53D56 /* MapRouteViewController.m in Sources */,
+				BD306F9C1EF76CF10015E952 /* ToHostelDirectionsController.m in Sources */,
+				BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */,
+				BD2DF5A91EF672C1000A19E8 /* RoomCollectionViewLayout.m in Sources */,
+				BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */,
+				BD3C79F21EF395BE00B4651B /* main.m in Sources */,
+				BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */,
+				BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */,
+				BD297E6A1EF3F4B700FDD144 /* ImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD3C79F91EF395BE00B4651B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3C79FA1EF395BE00B4651B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD3C7A011EF395BE00B4651B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3C7A021EF395BE00B4651B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD3C7A051EF395BE00B4651B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD3C7A061EF395BE00B4651B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD3C7A081EF395BE00B4651B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = T9J39WJJ9G;
+				INFOPLIST_FILE = MapoHostelBasic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMakedonski.MapoHostelBasic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD3C7A091EF395BE00B4651B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = T9J39WJJ9G;
+				INFOPLIST_FILE = MapoHostelBasic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMakedonski.MapoHostelBasic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD3C79E81EF395BE00B4651B /* Build configuration list for PBXProject "MapoHostelBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3C7A051EF395BE00B4651B /* Debug */,
+				BD3C7A061EF395BE00B4651B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD3C7A071EF395BE00B4651B /* Build configuration list for PBXNativeTarget "MapoHostelBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3C7A081EF395BE00B4651B /* Debug */,
+				BD3C7A091EF395BE00B4651B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD3C79FC1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD3C79FD1EF395BE00B4651B /* MapoHostelBasic.xcdatamodel */,
+			);
+			currentVersion = BD3C79FD1EF395BE00B4651B /* MapoHostelBasic.xcdatamodel */;
+			path = MapoHostelBasic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD3C79E51EF395BE00B4651B /* Project object */;
+}

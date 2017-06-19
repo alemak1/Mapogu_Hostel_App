@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sports/Recreation</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>181-17 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>pc_game_room1</string>
+			<key>Longitude</key>
+			<real>126.9504</real>
+			<key>Latitude</key>
+			<real>37.5418</real>
+			<key>Name</key>
+			<string>PC Billiards</string>
+		</dict>
+	</array>
+	<key>Pharmacy/DrugStore</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>181-18 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>pharmacy1</string>
+			<key>Longitude</key>
+			<real>126.9503</real>
+			<key>Latitude</key>
+			<real>37.5417</real>
+			<key>Name</key>
+			<string>Yak Pharmacy</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-39 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>hubase_pharmacy</string>
+			<key>Longitude</key>
+			<real>126.9519</real>
+			<key>Latitude</key>
+			<real>37.5423</real>
+			<key>Name</key>
+			<string>Hubase Pharmacy</string>
+		</dict>
+	</array>
+	<key>Other Restaurants/Snack Shops</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>181-33 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>dohwadong_noodle1</string>
+			<key>Longitude</key>
+			<real>126.9501</real>
+			<key>Latitude</key>
+			<real>37.5417</real>
+			<key>Name</key>
+			<string>Sosohan Sikdang</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>180-7 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>dohwadong_noodle2</string>
+			<key>Longitude</key>
+			<real>126.9496</real>
+			<key>Latitude</key>
+			<real>37.5417</real>
+			<key>Name</key>
+			<string>Noodle Restaurant</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>kingkong_tteobokki</string>
+			<key>Longitude</key>
+			<real>126.9489</real>
+			<key>Latitude</key>
+			<real>37.5418</real>
+			<key>Name</key>
+			<string>King Kong Tteobokki</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>439-3 Gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>la_grallia</string>
+			<key>Longitude</key>
+			<real>126.9513</real>
+			<key>Latitude</key>
+			<real>37.543</real>
+			<key>Name</key>
+			<string>La Grallia</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>18-7 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>le_saigon</string>
+			<key>Longitude</key>
+			<real>126.9514</real>
+			<key>Latitude</key>
+			<real>37.5425</real>
+			<key>Name</key>
+			<string>Le Saigon</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>437-18 Gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>saboten</string>
+			<key>Longitude</key>
+			<real>126.9516</real>
+			<key>Latitude</key>
+			<real>37.543</real>
+			<key>Name</key>
+			<string>Saboten</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-14 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>oppadak_chicken</string>
+			<key>Longitude</key>
+			<real>126.9519</real>
+			<key>Latitude</key>
+			<real>37.5425</real>
+			<key>Name</key>
+			<string>Oppadak Oven Baked Chicken</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-58 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>sushi_box</string>
+			<key>Longitude</key>
+			<real>126.952</real>
+			<key>Latitude</key>
+			<real>37.5422</real>
+			<key>Name</key>
+			<string>Sushi Box</string>
+		</dict>
+	</array>
+	<key>Phone/Mobile Service</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>18-9 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>world_galleh_square</string>
+			<key>Longitude</key>
+			<string>126.9512</string>
+			<key>Latitude</key>
+			<string>37.5423</string>
+			<key>Name</key>
+			<string>World Galleh Square</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-14 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>sk_telecom</string>
+			<key>Longitude</key>
+			<string>126.9518</string>
+			<key>Latitude</key>
+			<string>37.5427</string>
+			<key>Name</key>
+			<string>SK Telecom</string>
+		</dict>
+	</array>
+	<key>Korean Barbecue</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>47 Dohwagil</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>korean_barbecue3</string>
+			<key>Longitude</key>
+			<real>126.9508</real>
+			<key>Latitude</key>
+			<real>37.5419</real>
+			<key>Name</key>
+			<string>Korean Barbecue 3</string>
+		</dict>
+	</array>
+	<key>Convenience Stores</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>212 Baekbeomno</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>emart_entrance</string>
+			<key>Longitude</key>
+			<real>126.9534</real>
+			<key>Latitude</key>
+			<real>37.5426</real>
+			<key>Name</key>
+			<string>Emart Entrance</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>438-5 Gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul </string>
+			<key>ImageFilePath</key>
+			<string>711_emart</string>
+			<key>Longitude</key>
+			<real>126.9522</real>
+			<key>Latitude</key>
+			<real>37.5436</real>
+			<key>Name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>18-8 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>gs_25</string>
+			<key>Longitude</key>
+			<real>126.9515</real>
+			<key>Latitude</key>
+			<real>37.5425</real>
+			<key>Name</key>
+			<string>GS-25</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-42 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>711_by_sushi_box</string>
+			<key>Longitude</key>
+			<real>126.9521</real>
+			<key>Latitude</key>
+			<real>37.5424</real>
+			<key>Name</key>
+			<string>7-11</string>
+		</dict>
+	</array>
+	<key>Coffee Shops</key>
+	<array>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>25-42 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>forestin_cafe</string>
+			<key>Longitude</key>
+			<string>126.9521</string>
+			<key>Latitude</key>
+			<real>37.5425</real>
+			<key>Name</key>
+			<string>Forestin Cafe</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>120-3 Sin-gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>starbucks_emart</string>
+			<key>Longitude</key>
+			<string>126.9538</string>
+			<key>Latitude</key>
+			<real>37.5425</real>
+			<key>Name</key>
+			<real>0</real>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>56-76 Sin-gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>ediya_coffee</string>
+			<key>Longitude</key>
+			<real>126.953</real>
+			<key>Latitude</key>
+			<real>37.5428</real>
+			<key>Name</key>
+			<string>Ediya Coffee</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>68 Mapodaero</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>starbucks_mapodaero</string>
+			<key>Longitude</key>
+			<real>126.949</real>
+			<key>Latitude</key>
+			<real>37.5415</real>
+			<key>Name</key>
+			<string>Starbucks</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapogu</string>
+			<key>Street</key>
+			<string>556 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>hollys_coffee</string>
+			<key>Longitude</key>
+			<real>126.9491</real>
+			<key>Latitude</key>
+			<real>37.5426</real>
+			<key>Name</key>
+			<string>Holly&apos;s Coffee</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapgou</string>
+			<key>Street</key>
+			<string>180-4 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>cafe_mangosix</string>
+			<key>Longitude</key>
+			<real>126.9502</real>
+			<key>Latitude</key>
+			<real>37.5421</real>
+			<key>Name</key>
+			<string>Cafe Mangosix</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapgou</string>
+			<key>Street</key>
+			<string>63-10 Sin-gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>coffee_the_camp</string>
+			<key>Longitude</key>
+			<real>126.9521</real>
+			<key>Latitude</key>
+			<real>37.5428</real>
+			<key>Name</key>
+			<string>Coffee the Camp</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapgou</string>
+			<key>Street</key>
+			<string>63-10 Sin-gongdeokdong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>tous_le_jours</string>
+			<key>Longitude</key>
+			<real>126.9522</real>
+			<key>Latitude</key>
+			<real>37.5428</real>
+			<key>Name</key>
+			<string>Tous Les Jours</string>
+		</dict>
+		<dict>
+			<key>ISOCountry</key>
+			<string></string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PostalCode</key>
+			<string>Mapgou</string>
+			<key>Street</key>
+			<string>25-15 Dohwadong</string>
+			<key>City</key>
+			<string>Seoul</string>
+			<key>ImageFilePath</key>
+			<string>cafe_pascucci</string>
+			<key>Longitude</key>
+			<real>126.9506</real>
+			<key>Latitude</key>
+			<real>37.5432</real>
+			<key>Name</key>
+			<string>Cafe Pascucci</string>
+		</dict>
+	</array>
+</dict>
+</plist>

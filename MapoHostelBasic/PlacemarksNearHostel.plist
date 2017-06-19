@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Longitude</key>
+		<real>126.9513</real>
+		<key>Latitude</key>
+		<real>37.5421</real>
+		<key>Name</key>
+		<string>Steamed Bun Shop</string>
+	</dict>
+	<dict>
+		<key>Longitude</key>
+		<real>126.9522</real>
+		<key>Latitude</key>
+		<real>37.5436</real>
+		<key>Name</key>
+		<string>711 (by Emart)</string>
+	</dict>
+	<dict>
+		<key>Latitude</key>
+		<real>37.5425</real>
+		<key>Longitude</key>
+		<real>126.9538</real>
+		<key>Name</key>
+		<string>Starbucks (by Emart)</string>
+	</dict>
+	<dict>
+		<key>CNPostalAddressISOCountryCodeKey</key>
+		<string></string>
+		<key>CNPostalAddressCountryKey</key>
+		<string></string>
+		<key>CNPostalAddressPostalCodeKey</key>
+		<string></string>
+		<key>CNPostalAddressCityKey</key>
+		<string></string>
+		<key>CNPostalAddressStreetKey</key>
+		<string></string>
+		<key>Longitude</key>
+		<real>126.9531</real>
+		<key>Latitude</key>
+		<real>37.5428</real>
+		<key>Name</key>
+		<string>Ediya Coffee</string>
+	</dict>
+	<dict>
+		<key>Longitude</key>
+		<real>126.9534</real>
+		<key>Latitude</key>
+		<real>37.5426</real>
+		<key>Name</key>
+		<string>Emart</string>
+	</dict>
+	<dict/>
+</array>
+</plist>

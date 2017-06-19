@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ImageKey</key>
+		<string>BathRoomNo1_1</string>
+		<key>TitleKey</key>
+		<string>Shared bathroom provided for each 4-bunk room...</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>Kitchen_1</string>
+		<key>TitleKey</key>
+		<string>Kitchen and refrigerator available to guests...</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>SubwayMap_2</string>
+		<key>TitleKey</key>
+		<string>Immediately next to subway stop, quickly accessible from airport...</string>
+	</dict>
+	<dict>
+		<key>TitleKey</key>
+		<string>Meet travelers and backpackers from all over the world...</string>
+		<key>ImageKey</key>
+		<string>Guests1</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>ComputerDesk</string>
+		<key>TitleKey</key>
+		<string>Easy access to WiFi....</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>SubwayMap_1</string>
+		<key>TitleKey</key>
+		<string>Easy access to fun locations and tourist hotspots...</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>RoomNo3_11</string>
+		<key>TitleKey</key>
+		<string>4-Person Dorms, all male or all female....</string>
+	</dict>
+	<dict>
+		<key>ImageKey</key>
+		<string>RoomNo2_2</string>
+		<key>TitleKey</key>
+		<string>Air conditioning, lockers, and available...</string>
+	</dict>
+</array>
+</plist>
