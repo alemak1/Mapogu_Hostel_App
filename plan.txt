@@ -1,0 +1,25 @@
+//SwipeTray with links
+	//swipe to get the links
+
+
+
+//UIScrollView linked with UIPageControl
+
+//UITableView with locations of interests
+
+//Side-by-Side MapViews (source and destination)
+//Get route to hostel (ViewController)
+
+//SplitView controller (table view controller/map view)
+	//First, for source location
+	//Second, for destination location
+
+//Tabbed control with rooms
+//Collection view (with headers) for rooms/guests, etc.
+
+Address Information
+Directions to Hostel 
+	- get map screen shot for routes from airport to the hostel
+
+Contact Information for Hostel
+Nearby Sites of Interest (table view and collection view)

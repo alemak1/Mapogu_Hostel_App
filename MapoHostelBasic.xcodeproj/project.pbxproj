@@ -19,6 +19,7 @@
 		BD315E851EF7A7E40006292D /* PlacemarksNearHostel.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */; };
 		BD315E871EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */; };
 		BD3165401EF8051D007870DA /* LocalSites.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31653F1EF8051D007870DA /* LocalSites.xcassets */; };
+		BD31EAA01EF8F103001812F2 /* IntroViewControllerAB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD31EA9F1EF8F103001812F2 /* IntroViewControllerAB.m */; };
 		BD3869E41EF5666F008F0BFB /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E31EF5666F008F0BFB /* ScrollViewController.m */; };
 		BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E61EF5690C008F0BFB /* ScrollableContentController.m */; };
 		BD3C79F21EF395BE00B4651B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79F11EF395BE00B4651B /* main.m */; };
@@ -38,6 +39,7 @@
 		BDEFD4E71EF6D5C4000571C7 /* DirectionRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E61EF6D5C4000571C7 /* DirectionRequestController.m */; };
 		BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */; };
 		BDF0CA631EF51CB400B53D56 /* MapRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0CA621EF51CB400B53D56 /* MapRouteViewController.m */; };
+		BDFAF9A11EF8C4FC00899ACE /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFAF9A01EF8C4FC00899ACE /* IntroViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlacemarksNearHostel.plist; sourceTree = "<group>"; };
 		BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlacemarksNearHostelDictionary.plist; sourceTree = "<group>"; };
 		BD31653F1EF8051D007870DA /* LocalSites.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LocalSites.xcassets; sourceTree = "<group>"; };
+		BD31EA9E1EF8F0F4001812F2 /* IntroViewControllerAB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroViewControllerAB.h; sourceTree = "<group>"; };
+		BD31EA9F1EF8F103001812F2 /* IntroViewControllerAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewControllerAB.m; sourceTree = "<group>"; };
 		BD3869E21EF56661008F0BFB /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		BD3869E31EF5666F008F0BFB /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		BD3869E51EF568D3008F0BFB /* ScrollableContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollableContentController.h; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationSelectionController.m; sourceTree = "<group>"; };
 		BDF0CA611EF51C9D00B53D56 /* MapRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapRouteViewController.h; sourceTree = "<group>"; };
 		BDF0CA621EF51CB400B53D56 /* MapRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteViewController.m; sourceTree = "<group>"; };
+		BDFAF99F1EF8C4F000899ACE /* IntroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		BDFAF9A01EF8C4FC00899ACE /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,15 @@
 			name = HostelCollectionViewController;
 			sourceTree = "<group>";
 		};
+		BD31EA9D1EF8F0D6001812F2 /* IntroViewControllerAB */ = {
+			isa = PBXGroup;
+			children = (
+				BD31EA9E1EF8F0F4001812F2 /* IntroViewControllerAB.h */,
+				BD31EA9F1EF8F103001812F2 /* IntroViewControllerAB.m */,
+			);
+			name = IntroViewControllerAB;
+			sourceTree = "<group>";
+		};
 		BD3869DD1EF54B02008F0BFB /* ScrollViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +206,8 @@
 		BD3C79EF1EF395BE00B4651B /* MapoHostelBasic */ = {
 			isa = PBXGroup;
 			children = (
+				BD31EA9D1EF8F0D6001812F2 /* IntroViewControllerAB */,
+				BDFAF99E1EF8C4CC00899ACE /* IntroViewController */,
 				BD4C4D221EF7C4BB00B8FFBE /* PageViewControllerUtils */,
 				BD2E52311EF662A9008FF026 /* HostelCollectionViewController */,
 				BDC5F70C1EF63593001EEEC4 /* SplitViewController */,
@@ -305,6 +322,15 @@
 			name = MapRouteViewController;
 			sourceTree = "<group>";
 		};
+		BDFAF99E1EF8C4CC00899ACE /* IntroViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAF99F1EF8C4F000899ACE /* IntroViewController.h */,
+				BDFAF9A01EF8C4FC00899ACE /* IntroViewController.m */,
+			);
+			name = IntroViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +422,7 @@
 				BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */,
 				BD3C7A0B1EF39AD100B4651B /* ModelViewController.m in Sources */,
 				BD297E6D1EF3F64500FDD144 /* ImageKeyConstants.m in Sources */,
+				BD31EAA01EF8F103001812F2 /* IntroViewControllerAB.m in Sources */,
 				BDC5F70F1EF635BE001EEEC4 /* MainSplitViewController.m in Sources */,
 				BD2BE4E61EF4D2C0007B45F3 /* UserLocationViewController.m in Sources */,
 				BD3C7A0E1EF39AFB00B4651B /* HostelPageViewController.m in Sources */,
@@ -408,6 +435,7 @@
 				BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */,
 				BD2DF5A91EF672C1000A19E8 /* RoomCollectionViewLayout.m in Sources */,
 				BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */,
+				BDFAF9A11EF8C4FC00899ACE /* IntroViewController.m in Sources */,
 				BD3C79F21EF395BE00B4651B /* main.m in Sources */,
 				BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */,
 				BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */,
@@ -534,6 +562,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = T9J39WJJ9G;
 				INFOPLIST_FILE = MapoHostelBasic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMakedonski.MapoHostelBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +576,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = T9J39WJJ9G;
 				INFOPLIST_FILE = MapoHostelBasic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMakedonski.MapoHostelBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

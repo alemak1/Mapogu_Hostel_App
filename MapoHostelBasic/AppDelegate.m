@@ -16,6 +16,8 @@
 #import "RoomCollectionViewController.h"
 #import "ToHostelDirectionsController.h"
 #import "ListLocationSelectionController.h"
+#import "IntroViewController.h"
+#import "IntroViewControllerAB.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +29,9 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
     MAP_ROUTE_VIEW_CONTROLLER,
     SCROLL_VIEW_CONTROLLER_FROM_STORYBOARD,
     SCROLL_VIEW_CONTROLLER_NON_STORYBOARD,
-    MAIN_SPLIT_VIEW_CONTROLLER
+    MAIN_SPLIT_VIEW_CONTROLLER,
+    INTRO_VIEW_CONTROLLER,
+    INTRO_VIEW_CONTROLLER_AB
 } TESTABLE_VIEWCONTROLLERS;
 
 @end
@@ -41,9 +45,11 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
     
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 
-    UIViewController* rootViewController = [self getTestableViewController:TO_HOSTEL_DIRECTIONS_CONTROLLER];
+    UIViewController* rootViewController = [self getTestableViewController:INTRO_VIEW_CONTROLLER];
     
     [self.window setRootViewController:rootViewController];
+    
+    NSLog(@"RootViewController has been set to %@",[rootViewController description]);
     
     [self.window makeKeyAndVisible];
     
@@ -211,6 +217,12 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
             break;
         case MAIN_SPLIT_VIEW_CONTROLLER:
             testableViewController = [[MainSplitViewController alloc]init];
+            break;
+        case INTRO_VIEW_CONTROLLER:
+            testableViewController = [[IntroViewController alloc]init];
+            break;
+        case INTRO_VIEW_CONTROLLER_AB:
+            testableViewController = [[IntroViewControllerAB alloc]init];
             break;
         default:
             break;
