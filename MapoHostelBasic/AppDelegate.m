@@ -18,6 +18,7 @@
 #import "ListLocationSelectionController.h"
 #import "IntroViewController.h"
 #import "IntroViewControllerAB.h"
+#import "ImageCacheTestController.h"
 
 @interface AppDelegate ()
 
@@ -31,28 +32,32 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
     SCROLL_VIEW_CONTROLLER_NON_STORYBOARD,
     MAIN_SPLIT_VIEW_CONTROLLER,
     INTRO_VIEW_CONTROLLER,
-    INTRO_VIEW_CONTROLLER_AB
+    INTRO_VIEW_CONTROLLER_AB,
+    IMAGE_CACHE_TEST_CONTROLLER
 } TESTABLE_VIEWCONTROLLERS;
 
 @end
 
 @implementation AppDelegate
 
+static BOOL willUseStoryBoard = NO;
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
   
-    
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    if(!willUseStoryBoard){
+        self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 
-    UIViewController* rootViewController = [self getTestableViewController:INTRO_VIEW_CONTROLLER];
+        UIViewController* rootViewController = [self getTestableViewController:INTRO_VIEW_CONTROLLER];
     
-    [self.window setRootViewController:rootViewController];
+        [self.window setRootViewController:rootViewController];
     
-    NSLog(@"RootViewController has been set to %@",[rootViewController description]);
-    
-    [self.window makeKeyAndVisible];
-    
+        NSLog(@"RootViewController has been set to %@",[rootViewController description]);
+        
+        [self.window makeKeyAndVisible];
+    }
     
     return YES;
 }
@@ -224,6 +229,8 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
         case INTRO_VIEW_CONTROLLER_AB:
             testableViewController = [[IntroViewControllerAB alloc]init];
             break;
+        case IMAGE_CACHE_TEST_CONTROLLER:
+            testableViewController = [[ImageCacheTestController alloc] init];
         default:
             break;
     }

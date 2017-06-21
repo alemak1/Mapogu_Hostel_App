@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQf-6j-0Md">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -326,6 +326,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCj-BU-Ofl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1545" y="-1913"/>
+        </scene>
+        <!--Image Cache Test Controller-->
+        <scene sceneID="cuq-vQ-XxR">
+            <objects>
+                <viewController id="OQf-6j-0Md" customClass="ImageCacheTestController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Vc-z6-4gl"/>
+                        <viewControllerLayoutGuide type="bottom" id="vbu-y5-9LW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JMW-on-XSw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Mr-eg-tOU">
+                                <rect key="frame" x="87" y="502" width="240" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageCache TestController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01c-2Q-Woe">
+                                <rect key="frame" x="103" y="59" width="208.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-eZ-lb8">
+                                <rect key="frame" x="87" y="129" width="240" height="188"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.4406584482" blue="0.66813755249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Mr-eg-tOU" firstAttribute="width" secondItem="AcF-eZ-lb8" secondAttribute="width" id="1kG-gc-SHm"/>
+                            <constraint firstItem="AcF-eZ-lb8" firstAttribute="leading" secondItem="JMW-on-XSw" secondAttribute="leadingMargin" constant="67" id="7aw-V9-19X"/>
+                            <constraint firstItem="4Mr-eg-tOU" firstAttribute="top" secondItem="AcF-eZ-lb8" secondAttribute="bottom" constant="185" id="B3f-aE-OvD"/>
+                            <constraint firstItem="4Mr-eg-tOU" firstAttribute="centerX" secondItem="JMW-on-XSw" secondAttribute="centerX" id="RMT-YJ-tgi"/>
+                            <constraint firstItem="01c-2Q-Woe" firstAttribute="top" secondItem="3Vc-z6-4gl" secondAttribute="bottom" constant="39" id="UZb-Zu-L99"/>
+                            <constraint firstItem="vbu-y5-9LW" firstAttribute="top" secondItem="4Mr-eg-tOU" secondAttribute="bottom" constant="232" id="Ytv-1R-yuF"/>
+                            <constraint firstItem="AcF-eZ-lb8" firstAttribute="top" secondItem="3Vc-z6-4gl" secondAttribute="bottom" constant="109" id="bAt-g8-hBk"/>
+                            <constraint firstItem="01c-2Q-Woe" firstAttribute="centerX" secondItem="JMW-on-XSw" secondAttribute="centerX" id="qI6-fA-U2f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AcF-eZ-lb8" secondAttribute="trailing" constant="67" id="zbE-Sv-0ax"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AcF-eZ-lb8" id="yDr-n4-OP4"/>
+                        <outlet property="progressView" destination="4Mr-eg-tOU" id="SX6-bW-spx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eX8-cy-3gH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3932" y="-2022"/>
         </scene>
         <!--Hostel Page View Controller-->
         <scene sceneID="tne-QT-ifu">

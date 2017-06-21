@@ -9,6 +9,24 @@
 #ifndef ImageKeyConstants_h
 #define ImageKeyConstants_h
 
+#pragma mark ******** SECTION KEY CONSTANTS
+
+
+extern NSString* const SECTION_ROOM_NO1;
+extern NSString* const SECTION_ROOM_NO2;
+extern NSString* const SECTION_ROOM_NO3;
+extern NSString* const SECTION_ROOM_NO4;
+extern NSString* const SECTION_BATHROOMS;
+extern NSString* const SECTION_LOBBY;
+extern NSString* const SECTION_KITCHEN;
+extern NSString* const SECTION_GUESTS;
+extern NSString* const SECTION_OTHER;
+
+
+
+
+#pragma mark ******** IMAGE KEY CONSTANTS
+
 extern NSString* const kKitchen_1;
 
 extern NSString* const kLobby_1;

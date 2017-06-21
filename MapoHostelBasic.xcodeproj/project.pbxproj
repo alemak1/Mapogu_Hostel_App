@@ -33,6 +33,7 @@
 		BD3C7A0E1EF39AFB00B4651B /* HostelPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A0D1EF39AFB00B4651B /* HostelPageViewController.m */; };
 		BD3C7A111EF3A21A00B4651B /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A101EF3A21A00B4651B /* DataViewController.m */; };
 		BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */; };
+		BD4C86C31EFA31AF00103789 /* ImageCacheTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C86C21EFA31AF00103789 /* ImageCacheTestController.m */; };
 		BDC5F70F1EF635BE001EEEC4 /* MainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */; };
 		BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */; };
 		BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEA1E471EF448A60019AADD /* PhotoListController.m */; };
@@ -91,6 +92,8 @@
 		BD3C7A121EF3A22500B4651B /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		BD4C4D1C1EF7BF1D00B8FFBE /* ListLocationSelectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLocationSelectionController.h; sourceTree = "<group>"; };
 		BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLocationSelectionController.m; sourceTree = "<group>"; };
+		BD4C86C11EFA31A000103789 /* ImageCacheTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCacheTestController.h; sourceTree = "<group>"; };
+		BD4C86C21EFA31AF00103789 /* ImageCacheTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheTestController.m; sourceTree = "<group>"; };
 		BDC5F70D1EF635AC001EEEC4 /* MainSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSplitViewController.h; sourceTree = "<group>"; };
 		BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSplitViewController.m; sourceTree = "<group>"; };
 		BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewController.m; sourceTree = "<group>"; };
@@ -122,10 +125,7 @@
 		BD297E671EF3F48C00FDD144 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				BD297E681EF3F4A000FDD144 /* ImageManager.h */,
-				BD297E691EF3F4B700FDD144 /* ImageManager.m */,
-				BD297E6B1EF3F63800FDD144 /* ImageKeyConstants.h */,
-				BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */,
+				BD31AFA21EFA7B2500BF2227 /* ImageManager */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -156,6 +156,18 @@
 				BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */,
 			);
 			name = HostelCollectionViewController;
+			sourceTree = "<group>";
+		};
+		BD31AFA21EFA7B2500BF2227 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C86C01EFA318B00103789 /* ImageCacheTestController */,
+				BD297E681EF3F4A000FDD144 /* ImageManager.h */,
+				BD297E691EF3F4B700FDD144 /* ImageManager.m */,
+				BD297E6B1EF3F63800FDD144 /* ImageKeyConstants.h */,
+				BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */,
+			);
+			name = ImageManager;
 			sourceTree = "<group>";
 		};
 		BD31EA9D1EF8F0D6001812F2 /* IntroViewControllerAB */ = {
@@ -281,6 +293,15 @@
 				BD3C7A0F1EF39B0800B4651B /* HostelPageViewController.h */,
 			);
 			name = PageViewControllerUtils;
+			sourceTree = "<group>";
+		};
+		BD4C86C01EFA318B00103789 /* ImageCacheTestController */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C86C11EFA31A000103789 /* ImageCacheTestController.h */,
+				BD4C86C21EFA31AF00103789 /* ImageCacheTestController.m */,
+			);
+			name = ImageCacheTestController;
 			sourceTree = "<group>";
 		};
 		BDC5F70C1EF63593001EEEC4 /* SplitViewController */ = {
@@ -437,6 +458,7 @@
 				BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */,
 				BDFAF9A11EF8C4FC00899ACE /* IntroViewController.m in Sources */,
 				BD3C79F21EF395BE00B4651B /* main.m in Sources */,
+				BD4C86C31EFA31AF00103789 /* ImageCacheTestController.m in Sources */,
 				BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */,
 				BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */,
 				BD297E6A1EF3F4B700FDD144 /* ImageManager.m in Sources */,

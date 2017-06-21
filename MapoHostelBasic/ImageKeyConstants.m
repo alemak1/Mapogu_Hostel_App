@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "ImageKeyConstants.h"
 
+extern NSString* const SECTION_ROOM_NO1 = @"SECTION_ROOM_NO1";
+extern NSString* const SECTION_ROOM_NO2 = @"SECTION_ROOM_NO2";
+extern NSString* const SECTION_ROOM_NO3 = @"SECTION_ROOM_NO3";
+extern NSString* const SECTION_ROOM_NO4 = @"SECTION_ROOM_NO4";
+extern NSString* const SECTION_BATHROOMS = @"SECTION_BATHROOMS";
+extern NSString* const SECTION_LOBBY = @"SECTION_LOBBY";
+extern NSString* const SECTION_KITCHEN = @"SECTION_KITCHEN";
+extern NSString* const SECTION_GUESTS = @"SECTION_GUESTS";
+extern NSString* const SECTION_OTHER = @"SECTION_OTHER";
 
 extern NSString* const kKitchen_1 = @"Kitchen_1";
 

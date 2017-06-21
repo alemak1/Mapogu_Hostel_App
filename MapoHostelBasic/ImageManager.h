@@ -29,9 +29,12 @@ typedef enum{
 
 + (id)sharedManager;
 
+/** Class methods **/
+
 + (NSString*) getImageNameForIndexPath:(NSIndexPath*)indexPath;
 + (NSInteger) numberOfSections;
-+ (NSInteger) numberOfItemsInSection:(NSInteger)section;
++ (NSInteger) numberOfItemsInSection:(NSString*)sectionKeyString;
++ (NSInteger) numberOfItemsInSectionForSectionKeyEnum:(SectionKey)sectionKeyNumber;
 
 /** Image getter methods **/
 
@@ -44,6 +47,8 @@ typedef enum{
 - (UIImage*) getImageForKitchen:(NSString*)keyKitchen;
 - (UIImage*) getImageForOther:(NSString*)keyOther;
 
+- (UIImage*) getImageForIndexPath:(NSIndexPath*)indexPath;
+
 /** Dictionary cache-loading methods **/
 
 - (void) loadDictForRoomNo1;
@@ -55,6 +60,17 @@ typedef enum{
 - (void) loadDictForGuests;
 - (void) loadDictForOther;
 - (void) loadDictForBathrooms;
+
+- (void) unloadDictForRoomNo1;
+- (void) unloadDictForRoomNo2;
+- (void) unloadDictForRoomNo3;
+- (void) unloadDictForRoomNo4;
+- (void) unloadDictForLobby;
+- (void) unloadDictForKitchen;
+- (void) unloadDictForGuests;
+- (void) unloadDictForOther;
+- (void) unloadDictForBathrooms;
+
 
 
 @end

@@ -60,7 +60,8 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return [ImageManager numberOfItemsInSection:section];
+    
+    return [ImageManager numberOfItemsInSectionForSectionKeyEnum:(int)section];
     
 }
 

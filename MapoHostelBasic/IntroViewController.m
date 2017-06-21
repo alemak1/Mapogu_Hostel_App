@@ -33,18 +33,19 @@
 
 
 static CGFloat const GUTTER_WIDTH = 100.0;
-static BOOL isLeft = NO;
+static BOOL gravityIsLeft = NO;
 
 @synthesize imageView = _imageView;
 @synthesize trayView = _trayView;
 @synthesize trayLeftEdgeConstraint = _trayLeftEdgeConstraint;
+@synthesize attachmentBehavior = _attachmentBehavior;
+@synthesize animator = _animator;
 
 -(void)viewWillLayoutSubviews{
     NSLog(@"Preparing to layout subviews for IntroViewController....");
     
     self.view.backgroundColor = [UIColor colorWithRed:232.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.00];
     
-    [self setupBackgroundImageView];
  
    
     
@@ -72,6 +73,7 @@ static BOOL isLeft = NO;
     
     [swipeLabel setText:@"Come inside! Swipe from the right edge to open..."];
     [swipeLabel setFont:[UIFont fontWithName:@"Baskerville-SemiBoldItalic" size:40.00]];
+    [swipeLabel setTextColor:[UIColor colorWithRed:100/255.0 green:100/255.0 blue:200/255.0 alpha:1.00]];
     [swipeLabel setNumberOfLines:0];
     [swipeLabel adjustsFontSizeToFitWidth];
     
@@ -90,34 +92,32 @@ static BOOL isLeft = NO;
 
 
 -(void)viewWillAppear:(BOOL)animated{
-    NSLog(@"Preparing to load view for IntroViewController....");
-    
-    NSLog(@"The tray view has origin.x: %f, origin.y: %f, size.width: %f, size.height: %f", [self.trayView.contentView frame].origin.x,[self.trayView.contentView frame].origin.y,[self.trayView.contentView frame].size.width,[self.trayView.contentView frame].size.height);
-    
-    
-    
-
+   
     
 }
 
 -(void)viewDidLoad{
     
+    [self setupBackgroundImageView];
+    
     [self setupTrayView];
+    
     
     [self setupGestureRecognizers];
     
-    _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.imageView];
     
     [self setupBehaviors];
     
     NSLog(@"Debug description for trayView: %@",[self.trayView description]);
+
+   
 }
 
 
 /** Before dynamic behaviors can be configured, the dynamic animator must have already been allocated and initialized, and any dynamic items being added to the behaviors should have been added and initialized already as well **/
 
 - (void) setupDynamicBehaviorsForItems:(NSArray<id<UIDynamicItem>>*)items{
-    NSLog(@"trayView frame is origin.x: %f, origin.y: %f, size.width: %f, size.height: %f",[self.trayView frame].origin.x,[self.trayView frame].origin.y,[self.trayView frame].size.width, [self.trayView frame].size.height);
     
     self.edgeCollisionBehavior = [[UICollisionBehavior alloc] initWithItems:items];
     
@@ -129,7 +129,6 @@ static BOOL isLeft = NO;
     [self.animator addBehavior:self.gravityBehavior];
     [self updateGravityIsLeft:NO];
     
-    NSLog(@"Finished layouing subviews for IntroView Controller...");
 }
 
 
@@ -140,6 +139,14 @@ static BOOL isLeft = NO;
     
     [self.view addGestureRecognizer:edgePan];
     
+    
+    UIScreenEdgePanGestureRecognizer* imageViewEdgePan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [imageViewEdgePan setEdges:UIRectEdgeRight];
+    
+    [self.imageView addGestureRecognizer:imageViewEdgePan];
+    
+    
+    
     UIPanGestureRecognizer* trayPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     
     [self.trayView addGestureRecognizer:trayPanGestureRecognizer];
@@ -149,7 +156,7 @@ static BOOL isLeft = NO;
 -(void)setupTrayView{
     
     
-    [self.view addSubview:self.trayView];
+    [self.imageView addSubview:self.trayView];
     
     NSArray<NSLayoutConstraint*>* trayViewConstraints = [NSArray arrayWithObjects:
         [[self.trayView widthAnchor] constraintEqualToAnchor:[self.view widthAnchor]],
@@ -171,10 +178,10 @@ static BOOL isLeft = NO;
     UIView*menuSuperview = self.menuStackView.superview;
     
     NSArray<NSLayoutConstraint*>* menuStackViewConstraints = [NSArray arrayWithObjects:
-        [[self.menuStackView topAnchor] constraintEqualToAnchor:[menuSuperview topAnchor]],
+        [[self.menuStackView topAnchor] constraintEqualToAnchor:[menuSuperview topAnchor] constant: 20.0],
         [[self.menuStackView bottomAnchor] constraintEqualToAnchor:[menuSuperview bottomAnchor]],
-        [[self.menuStackView leftAnchor] constraintEqualToAnchor:[menuSuperview leftAnchor]],
-        [[self.menuStackView rightAnchor] constraintEqualToAnchor:[menuSuperview rightAnchor]], nil];
+        [[self.menuStackView leftAnchor] constraintEqualToAnchor:[menuSuperview leftAnchor] constant: 10],
+        [[self.menuStackView rightAnchor] constraintEqualToAnchor:[menuSuperview rightAnchor] constant: -GUTTER_WIDTH-10], nil];
     
     [NSLayoutConstraint activateConstraints:menuStackViewConstraints];
     
@@ -185,21 +192,15 @@ static BOOL isLeft = NO;
 
 -(void) setupBehaviors{
     
-    NSLog(@"Preparing to set up behaviors...");
    
     [self.edgeCollisionBehavior setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(0.00, GUTTER_WIDTH, 0.00, -self.view.bounds.size.width)];
     
-    [self.animator addBehavior:self.edgeCollisionBehavior];
+    [_animator addBehavior:self.edgeCollisionBehavior];
     
-    [self.animator addBehavior:self.gravityBehavior];
-    [self updateGravityIsLeft:isLeft];
+    [_animator addBehavior:self.gravityBehavior];
+    [self updateGravityIsLeft:gravityIsLeft];
     
-    NSLog(@"The following behaviors have been added to the animator: ");
-    for (UIDynamicBehavior*behavior in [self.animator behaviors]) {
-        NSLog(@"Behavior: %@",[behavior description]);
-    }
     
-    NSLog(@"Finished setting up behaviors..");
 }
 
 
@@ -207,32 +208,28 @@ static BOOL isLeft = NO;
 -(void)pan:(UIScreenEdgePanGestureRecognizer*)recognizer{
     
     
-    NSLog(@"Recognizer detected. Preparing to initiate pan motion...");
     
-    CGPoint currentPoint = [recognizer locationInView:self.view];
+    CGPoint currentPoint = [recognizer locationInView:self.imageView];
+
     CGPoint xOnlyLocation = CGPointMake(currentPoint.x, self.view.center.y);
     
     if(recognizer.state == UIGestureRecognizerStateBegan){
-        NSLog(@"Starting pan...Recognizer location in view is x: %d, y: %d",currentPoint.x,currentPoint.y);
         
-        [self setAttachmentBehavior:[[UIAttachmentBehavior alloc] initWithItem:self.trayView attachedToAnchor:xOnlyLocation]];
-        
-        [self.animator addBehavior:self.attachmentBehavior];
-        
-        NSLog(@"Debug info about attachment behavior: %@",[self.attachmentBehavior description]);
+        _attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:self.trayView attachedToAnchor:xOnlyLocation];
+    
+        [_animator addBehavior:_attachmentBehavior];
         
     }else if(recognizer.state == UIGestureRecognizerStateChanged){
-        NSLog(@"Pan recognizer state changed...");
-        self.attachmentBehavior.anchorPoint = xOnlyLocation;
+        _attachmentBehavior.anchorPoint = xOnlyLocation;
         
     }else if(recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled){
         
-        NSLog(@"Pan recognizer state ended or cancelled...");
 
-        [self.animator removeBehavior:self.attachmentBehavior];
+        [_animator removeBehavior:_attachmentBehavior];
       
-        CGPoint velocity = [recognizer velocityInView:self.view];
+        CGPoint velocity = [recognizer velocityInView:self.imageView];
         CGFloat velocityThrowingThreshold = 500.0;
+        
         
         if(abs(velocity.x) > velocityThrowingThreshold){
             BOOL isLeft = velocity.x < 0;
@@ -241,6 +238,8 @@ static BOOL isLeft = NO;
             BOOL isLeft = self.trayView.frame.origin.x < self.view.center.x;
             [self updateGravityIsLeft:isLeft];
         }
+        
+       // [self.menuStackView becomeFirstResponder];
     }
 }
 
@@ -370,6 +369,55 @@ static BOOL isLeft = NO;
     
     return _trayLeftEdgeConstraint;
 }
+
+-(void)showRoomPriceInfo{
+    
+}
+
+-(void)showDirectionsInfo{
+    
+}
+
+-(void)showTouristSiteInfo{
+    
+}
+
+-(void)showContactInfo{
+    
+    
+}
+
+/**
+-(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    
+    [self.trayView removeFromSuperview];
+    
+}
+
+-(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{
+   
+    [self setupTrayView];
+    
+    [self setupGestureRecognizers];
+    
+    _animator = [[UIDynamicAnimator alloc]initWithReferenceView:self.imageView];
+    
+    [self setupBehaviors];
+}
+
+-(void)resetMenuStackViewConstraints{
+    UIView*menuSuperview = self.menuStackView.superview;
+    
+    NSArray<NSLayoutConstraint*>* menuStackViewConstraints = [NSArray arrayWithObjects:
+        [[self.menuStackView topAnchor] constraintEqualToAnchor:[menuSuperview topAnchor] constant: 20.0],
+        [[self.menuStackView bottomAnchor] constraintEqualToAnchor:[menuSuperview bottomAnchor]],
+        [[self.menuStackView leftAnchor] constraintEqualToAnchor:[menuSuperview leftAnchor] constant: 10],
+        [[self.menuStackView rightAnchor] constraintEqualToAnchor:[menuSuperview rightAnchor] constant: -GUTTER_WIDTH-10], nil];
+    
+    [NSLayoutConstraint activateConstraints:menuStackViewConstraints];
+}
+ 
+ **/
 
 @end
 
