@@ -22,6 +22,7 @@
 
 @synthesize placemarkDictionary = _placemarkDictionary;
 
+BOOL _seeNameOnly = true;
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -43,9 +44,42 @@
     
 }
 
+
+-(void)dismissNavigationController{
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)popToRootViewController{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 -(void)viewDidLoad{
     
+    
+    UIBarButtonItem* backToMenu = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonSystemItemRewind target:self action:@selector(dismissNavigationController)];
+    
+    UIBarButtonItem*viewAddressButton = [[UIBarButtonItem alloc]initWithTitle:@"See Name Only" style:UIBarButtonItemStylePlain target:self action:@selector(reloadTableViewToShowAddresses)];
+    
+
+    self.navigationItem.leftBarButtonItem = backToMenu;
+    self.navigationItem.rightBarButtonItem = viewAddressButton;
+    
 }
+
+-(void) reloadTableViewToShowAddresses{
+    
+    _seeNameOnly = !_seeNameOnly;
+    
+    if(_seeNameOnly){
+        [self.navigationItem.rightBarButtonItem setTitle:@"See Full Description"];
+    } else {
+        [self.navigationItem.rightBarButtonItem setTitle:@"See Name Only"];
+    }
+    
+    [self.tableView reloadData];
+}
+
 
 #pragma mark ******* TABLEVIEW DATA SOURCE METHODS
 
@@ -153,12 +187,7 @@
     return 40;
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIImageView* headerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fishTile_077"]];
-    
-    return nil;
-    
-}
+
 
 -(NSDictionary *)placemarkDictionary{
     
@@ -196,7 +225,15 @@
     NSString* street = [placemarkDict valueForKey:@"Street"];
     NSString* postalCode = [placemarkDict valueForKey:@"PostalCode"];
     
-    NSString* fullString = [NSString stringWithFormat:@"%@ on %@",name,street];
+    NSString* fullString;
+    
+    if(_seeNameOnly){
+        fullString = [NSString stringWithFormat:@"%@",name];
+
+    } else {
+        fullString = [NSString stringWithFormat:@"%@ on %@",name,street];
+
+    }
     
     NSMutableAttributedString* cellString = [[NSMutableAttributedString alloc]initWithString:fullString];
     

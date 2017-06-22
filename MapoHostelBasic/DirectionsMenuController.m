@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DirectionsMenuController.h"
 
+#import "TouristLocationSelectionNavigationController.h"
 #import "TouristLocationTableViewController.h"
 #import "LocationSearchController.h"
 #import "ToHostelDirectionsController.h"
@@ -148,7 +149,7 @@ typedef enum VALID_NEXT_VIEW_CONTROLLER{
                             
     switch (self.currentNextViewController) {
         case TOURIST_LOCATION_TABLEVIEW_CONTROLLER:
-            nextViewController = [[TouristLocationTableViewController alloc] init];
+            nextViewController = [self getNavigationControllerForTouristLocationTableViewController];
             break;
         case TO_HOSTEL_DIRECTIONS_CONTROLLER:
             nextViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"ToHostelDirectionsController"];
@@ -161,6 +162,15 @@ typedef enum VALID_NEXT_VIEW_CONTROLLER{
     }
     
     [self showViewController:nextViewController sender:nil];
+}
+
+- (UINavigationController*) getNavigationControllerForTouristLocationTableViewController{
+    
+    UINavigationController* navigationController = [[TouristLocationSelectionNavigationController alloc] initWithRootViewController:[[TouristLocationTableViewController alloc] init]];
+    
+
+    
+    return navigationController;
 }
 
 -(NSString*)getNextViewControllerTitleFor:(VALID_NEXT_VIEW_CONTROLLER)validNextViewController{

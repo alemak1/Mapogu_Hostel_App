@@ -19,6 +19,7 @@
 		BD2DF5A91EF672C1000A19E8 /* RoomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2DF5A81EF672C1000A19E8 /* RoomCollectionViewLayout.m */; };
 		BD2E52341EF662CF008FF026 /* HostelCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */; };
 		BD2E5B521EF56FC400B22DE5 /* contentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD2E5B511EF56FC400B22DE5 /* contentList.plist */; };
+		BD304DB21EFBFFF600CA3F10 /* TouristLocationSelectionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD304DB11EFBFFF600CA3F10 /* TouristLocationSelectionNavigationController.m */; };
 		BD306F9C1EF76CF10015E952 /* ToHostelDirectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD306F9B1EF76CF10015E952 /* ToHostelDirectionsController.m */; };
 		BD315E851EF7A7E40006292D /* PlacemarksNearHostel.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */; };
 		BD315E871EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */; };
@@ -77,6 +78,8 @@
 		BD2E52331EF662CF008FF026 /* HostelCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostelCollectionViewController.m; sourceTree = "<group>"; };
 		BD2E5B511EF56FC400B22DE5 /* contentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contentList.plist; sourceTree = "<group>"; };
 		BD2F80D21EF68BE2007E843C /* RoomNameDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomNameDictionary.h; sourceTree = "<group>"; };
+		BD304DB01EFBFFE700CA3F10 /* TouristLocationSelectionNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouristLocationSelectionNavigationController.h; sourceTree = "<group>"; };
+		BD304DB11EFBFFF600CA3F10 /* TouristLocationSelectionNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouristLocationSelectionNavigationController.m; sourceTree = "<group>"; };
 		BD306F9A1EF76CDF0015E952 /* ToHostelDirectionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToHostelDirectionsController.h; sourceTree = "<group>"; };
 		BD306F9B1EF76CF10015E952 /* ToHostelDirectionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToHostelDirectionsController.m; sourceTree = "<group>"; };
 		BD315E841EF7A7E40006292D /* PlacemarksNearHostel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlacemarksNearHostel.plist; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 				BD2D8A6E1EFBCB6600724CC9 /* LocationSearchController.m */,
 				BD2D8A701EFBDCEA00724CC9 /* DirectionsMenuController.h */,
 				BD2D8A711EFBDCFC00724CC9 /* DirectionsMenuController.m */,
+				BD304DB01EFBFFE700CA3F10 /* TouristLocationSelectionNavigationController.h */,
+				BD304DB11EFBFFF600CA3F10 /* TouristLocationSelectionNavigationController.m */,
 			);
 			name = TouristLocationTableViewController;
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 				BD2BE4E91EF4D56C007B45F3 /* AppLocationManager.m in Sources */,
 				BD3C79F81EF395BE00B4651B /* ViewController.m in Sources */,
 				BD2A75AF1EFB7E33000BDF06 /* PlacemarkConfiguration.m in Sources */,
+				BD304DB21EFBFFF600CA3F10 /* TouristLocationSelectionNavigationController.m in Sources */,
 				BD2D8A6F1EFBCB6600724CC9 /* LocationSearchController.m in Sources */,
 				BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */,
 				BD3C7A0B1EF39AD100B4651B /* ModelViewController.m in Sources */,
