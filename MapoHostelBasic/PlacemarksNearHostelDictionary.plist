@@ -5,8 +5,10 @@
 	<key>Sports/Recreation</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>4</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -28,8 +30,10 @@
 	<key>Pharmacy/DrugStore</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>5</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -48,8 +52,10 @@
 			<string>Yak Pharmacy</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<string>5</string>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -71,8 +77,10 @@
 	<key>Other Restaurants/Snack Shops</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -91,8 +99,10 @@
 			<string>Sosohan Sikdang</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -111,8 +121,10 @@
 			<string>Noodle Restaurant</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -131,8 +143,10 @@
 			<string>King Kong Tteobokki</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>Korea</string>
 			<key>PostalCode</key>
@@ -151,8 +165,10 @@
 			<string>La Grallia</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>Korea</string>
 			<key>PostalCode</key>
@@ -171,8 +187,10 @@
 			<string>Le Saigon</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>Korea</string>
 			<key>PostalCode</key>
@@ -191,8 +209,10 @@
 			<string>Saboten</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>Korea</string>
 			<key>PostalCode</key>
@@ -208,11 +228,13 @@
 			<key>Latitude</key>
 			<real>37.5425</real>
 			<key>Name</key>
-			<string>Oppadak Oven Baked Chicken</string>
+			<string>Oppadak Chicken</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>3</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>Korea</string>
 			<key>PostalCode</key>
@@ -234,8 +256,10 @@
 	<key>Phone/Mobile Service</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>6</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -254,8 +278,10 @@
 			<string>World Galleh Square</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<string>6</string>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -277,8 +303,10 @@
 	<key>Korean Barbecue</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>2</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -300,8 +328,10 @@
 	<key>Convenience Stores</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>1</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -320,8 +350,10 @@
 			<string>Emart Entrance</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>1</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -340,8 +372,10 @@
 			<string></string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>1</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -360,8 +394,10 @@
 			<string>GS-25</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>1</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -383,8 +419,10 @@
 	<key>Coffee Shops</key>
 	<array>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -403,8 +441,10 @@
 			<string>Forestin Cafe</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -420,11 +460,13 @@
 			<key>Latitude</key>
 			<real>37.5425</real>
 			<key>Name</key>
-			<real>0</real>
+			<string>Starbucks</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -443,8 +485,10 @@
 			<string>Ediya Coffee</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -463,8 +507,10 @@
 			<string>Starbucks</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -483,8 +529,10 @@
 			<string>Holly&apos;s Coffee</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -503,8 +551,10 @@
 			<string>Cafe Mangosix</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -523,8 +573,10 @@
 			<string>Coffee the Camp</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>
@@ -543,8 +595,10 @@
 			<string>Tous Les Jours</string>
 		</dict>
 		<dict>
+			<key>PlacemarkSection</key>
+			<integer>0</integer>
 			<key>ISOCountry</key>
-			<string></string>
+			<string>KOR</string>
 			<key>Country</key>
 			<string>South Korea</string>
 			<key>PostalCode</key>

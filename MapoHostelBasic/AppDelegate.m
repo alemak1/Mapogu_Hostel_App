@@ -19,6 +19,8 @@
 #import "IntroViewController.h"
 #import "IntroViewControllerAB.h"
 #import "ImageCacheTestController.h"
+#import "TouristLocationTableViewController.h"
+#import "TouristLocationSelectionContainingController.h"
 
 @interface AppDelegate ()
 
@@ -33,7 +35,9 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
     MAIN_SPLIT_VIEW_CONTROLLER,
     INTRO_VIEW_CONTROLLER,
     INTRO_VIEW_CONTROLLER_AB,
-    IMAGE_CACHE_TEST_CONTROLLER
+    IMAGE_CACHE_TEST_CONTROLLER,
+    TOURIST_LOCATION_TABLEVIEW_CONTROLLER,
+    TOURIST_LOCATION_SELECTION_CONTAINING_VIEW_CONTROLLER
 } TESTABLE_VIEWCONTROLLERS;
 
 @end
@@ -50,7 +54,7 @@ static BOOL willUseStoryBoard = NO;
     if(!willUseStoryBoard){
         self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 
-        UIViewController* rootViewController = [self getTestableViewController:INTRO_VIEW_CONTROLLER];
+        UIViewController* rootViewController = [self getTestableViewController:TOURIST_LOCATION_TABLEVIEW_CONTROLLER];
     
         [self.window setRootViewController:rootViewController];
     
@@ -231,6 +235,13 @@ static BOOL willUseStoryBoard = NO;
             break;
         case IMAGE_CACHE_TEST_CONTROLLER:
             testableViewController = [[ImageCacheTestController alloc] init];
+            break;
+        case TOURIST_LOCATION_TABLEVIEW_CONTROLLER:
+            testableViewController = [[TouristLocationTableViewController alloc] init];
+            break;
+        case TOURIST_LOCATION_SELECTION_CONTAINING_VIEW_CONTROLLER:
+            testableViewController = [[TouristLocationSelectionContainingController alloc] init];
+            break;
         default:
             break;
     }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BD297E6A1EF3F4B700FDD144 /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD297E691EF3F4B700FDD144 /* ImageManager.m */; };
 		BD297E6D1EF3F64500FDD144 /* ImageKeyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */; };
+		BD2A75AF1EFB7E33000BDF06 /* PlacemarkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2A75AE1EFB7E33000BDF06 /* PlacemarkConfiguration.m */; };
+		BD2A75B21EFB9350000BDF06 /* TouristLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2A75B11EFB9350000BDF06 /* TouristLocationMapViewController.m */; };
 		BD2BE4E61EF4D2C0007B45F3 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE4E51EF4D2C0007B45F3 /* UserLocationViewController.m */; };
 		BD2BE4E91EF4D56C007B45F3 /* AppLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE4E81EF4D56C007B45F3 /* AppLocationManager.m */; };
 		BD2D2B411EF50B320078CA7F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2D2B401EF50B320078CA7F /* MapKit.framework */; };
@@ -20,6 +22,7 @@
 		BD315E871EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD315E861EF7AABF0006292D /* PlacemarksNearHostelDictionary.plist */; };
 		BD3165401EF8051D007870DA /* LocalSites.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31653F1EF8051D007870DA /* LocalSites.xcassets */; };
 		BD31EAA01EF8F103001812F2 /* IntroViewControllerAB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD31EA9F1EF8F103001812F2 /* IntroViewControllerAB.m */; };
+		BD32F4791EFBA10D00AE3ADE /* UIMapViewTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD32F4781EFBA10D00AE3ADE /* UIMapViewTabbedViewController.m */; };
 		BD3869E41EF5666F008F0BFB /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E31EF5666F008F0BFB /* ScrollViewController.m */; };
 		BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3869E61EF5690C008F0BFB /* ScrollableContentController.m */; };
 		BD3C79F21EF395BE00B4651B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C79F11EF395BE00B4651B /* main.m */; };
@@ -34,8 +37,11 @@
 		BD3C7A111EF3A21A00B4651B /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C7A101EF3A21A00B4651B /* DataViewController.m */; };
 		BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */; };
 		BD4C86C31EFA31AF00103789 /* ImageCacheTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C86C21EFA31AF00103789 /* ImageCacheTestController.m */; };
+		BD8146101EFB738600F9A2B6 /* TouristLocationSelectionContainingController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD81460F1EFB738600F9A2B6 /* TouristLocationSelectionContainingController.m */; };
 		BDC5F70F1EF635BE001EEEC4 /* MainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */; };
 		BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */; };
+		BDE2B6CE1EFAB4020070F176 /* TouristLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE2B6CD1EFAB4020070F176 /* TouristLocationTableViewController.m */; };
+		BDE2B6D41EFAC5340070F176 /* HeaderViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE2B6D31EFAC5340070F176 /* HeaderViewConfiguration.m */; };
 		BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEA1E471EF448A60019AADD /* PhotoListController.m */; };
 		BDEFD4E71EF6D5C4000571C7 /* DirectionRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E61EF6D5C4000571C7 /* DirectionRequestController.m */; };
 		BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD4E91EF6DCEF000571C7 /* MapLocationSelectionController.m */; };
@@ -49,6 +55,9 @@
 		BD297E691EF3F4B700FDD144 /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
 		BD297E6B1EF3F63800FDD144 /* ImageKeyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageKeyConstants.h; sourceTree = "<group>"; };
 		BD297E6C1EF3F64500FDD144 /* ImageKeyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageKeyConstants.m; sourceTree = "<group>"; };
+		BD2A75AE1EFB7E33000BDF06 /* PlacemarkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacemarkConfiguration.m; sourceTree = "<group>"; };
+		BD2A75B01EFB9342000BDF06 /* TouristLocationMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouristLocationMapViewController.h; sourceTree = "<group>"; };
+		BD2A75B11EFB9350000BDF06 /* TouristLocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouristLocationMapViewController.m; sourceTree = "<group>"; };
 		BD2BE4E41EF4D2AF007B45F3 /* UserLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
 		BD2BE4E51EF4D2C0007B45F3 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
 		BD2BE4E71EF4D535007B45F3 /* AppLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLocationManager.h; sourceTree = "<group>"; };
@@ -69,6 +78,8 @@
 		BD31653F1EF8051D007870DA /* LocalSites.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LocalSites.xcassets; sourceTree = "<group>"; };
 		BD31EA9E1EF8F0F4001812F2 /* IntroViewControllerAB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroViewControllerAB.h; sourceTree = "<group>"; };
 		BD31EA9F1EF8F103001812F2 /* IntroViewControllerAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewControllerAB.m; sourceTree = "<group>"; };
+		BD32F4771EFBA0FD00AE3ADE /* UIMapViewTabbedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMapViewTabbedViewController.h; sourceTree = "<group>"; };
+		BD32F4781EFBA10D00AE3ADE /* UIMapViewTabbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMapViewTabbedViewController.m; sourceTree = "<group>"; };
 		BD3869E21EF56661008F0BFB /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		BD3869E31EF5666F008F0BFB /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		BD3869E51EF568D3008F0BFB /* ScrollableContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollableContentController.h; sourceTree = "<group>"; };
@@ -94,10 +105,18 @@
 		BD4C4D1D1EF7BF2D00B8FFBE /* ListLocationSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLocationSelectionController.m; sourceTree = "<group>"; };
 		BD4C86C11EFA31A000103789 /* ImageCacheTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCacheTestController.h; sourceTree = "<group>"; };
 		BD4C86C21EFA31AF00103789 /* ImageCacheTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheTestController.m; sourceTree = "<group>"; };
+		BD81460E1EFB737500F9A2B6 /* TouristLocationSelectionContainingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouristLocationSelectionContainingController.h; sourceTree = "<group>"; };
+		BD81460F1EFB738600F9A2B6 /* TouristLocationSelectionContainingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouristLocationSelectionContainingController.m; sourceTree = "<group>"; };
 		BDC5F70D1EF635AC001EEEC4 /* MainSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSplitViewController.h; sourceTree = "<group>"; };
 		BDC5F70E1EF635BE001EEEC4 /* MainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSplitViewController.m; sourceTree = "<group>"; };
 		BDC5F7111EF63722001EEEC4 /* RoomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewController.m; sourceTree = "<group>"; };
 		BDC5F7131EF64818001EEEC4 /* RoomCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomCollectionViewController.h; sourceTree = "<group>"; };
+		BDE2B6CD1EFAB4020070F176 /* TouristLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouristLocationTableViewController.m; sourceTree = "<group>"; };
+		BDE2B6CF1EFAB40D0070F176 /* TouristLocationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouristLocationTableViewController.h; sourceTree = "<group>"; };
+		BDE2B6D01EFAB98A0070F176 /* PlacemarkConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacemarkConfiguration.h; sourceTree = "<group>"; };
+		BDE2B6D11EFAC2320070F176 /* HeaderViewConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderViewConfiguration.h; sourceTree = "<group>"; };
+		BDE2B6D21EFAC3260070F176 /* PlacemarkSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacemarkSection.h; sourceTree = "<group>"; };
+		BDE2B6D31EFAC5340070F176 /* HeaderViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewConfiguration.m; sourceTree = "<group>"; };
 		BDEA1E461EF448980019AADD /* PhotoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListController.h; sourceTree = "<group>"; };
 		BDEA1E471EF448A60019AADD /* PhotoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListController.m; sourceTree = "<group>"; };
 		BDEFD4E51EF6D5B7000571C7 /* DirectionRequestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionRequestController.h; sourceTree = "<group>"; };
@@ -218,6 +237,7 @@
 		BD3C79EF1EF395BE00B4651B /* MapoHostelBasic */ = {
 			isa = PBXGroup;
 			children = (
+				BDE2B6CC1EFAB3E40070F176 /* TouristLocationTableViewController */,
 				BD31EA9D1EF8F0D6001812F2 /* IntroViewControllerAB */,
 				BDFAF99E1EF8C4CC00899ACE /* IntroViewController */,
 				BD4C4D221EF7C4BB00B8FFBE /* PageViewControllerUtils */,
@@ -316,6 +336,26 @@
 				BD2F80D21EF68BE2007E843C /* RoomNameDictionary.h */,
 			);
 			name = SplitViewController;
+			sourceTree = "<group>";
+		};
+		BDE2B6CC1EFAB3E40070F176 /* TouristLocationTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2B6CD1EFAB4020070F176 /* TouristLocationTableViewController.m */,
+				BDE2B6CF1EFAB40D0070F176 /* TouristLocationTableViewController.h */,
+				BDE2B6D01EFAB98A0070F176 /* PlacemarkConfiguration.h */,
+				BD2A75AE1EFB7E33000BDF06 /* PlacemarkConfiguration.m */,
+				BDE2B6D21EFAC3260070F176 /* PlacemarkSection.h */,
+				BDE2B6D11EFAC2320070F176 /* HeaderViewConfiguration.h */,
+				BDE2B6D31EFAC5340070F176 /* HeaderViewConfiguration.m */,
+				BD81460E1EFB737500F9A2B6 /* TouristLocationSelectionContainingController.h */,
+				BD81460F1EFB738600F9A2B6 /* TouristLocationSelectionContainingController.m */,
+				BD2A75B01EFB9342000BDF06 /* TouristLocationMapViewController.h */,
+				BD2A75B11EFB9350000BDF06 /* TouristLocationMapViewController.m */,
+				BD32F4771EFBA0FD00AE3ADE /* UIMapViewTabbedViewController.h */,
+				BD32F4781EFBA10D00AE3ADE /* UIMapViewTabbedViewController.m */,
+			);
+			name = TouristLocationTableViewController;
 			sourceTree = "<group>";
 		};
 		BDEA1E451EF4486F0019AADD /* CollectionViewControllers */ = {
@@ -437,9 +477,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD2E52341EF662CF008FF026 /* HostelCollectionViewController.m in Sources */,
+				BDE2B6CE1EFAB4020070F176 /* TouristLocationTableViewController.m in Sources */,
 				BDEFD4E71EF6D5C4000571C7 /* DirectionRequestController.m in Sources */,
 				BD2BE4E91EF4D56C007B45F3 /* AppLocationManager.m in Sources */,
 				BD3C79F81EF395BE00B4651B /* ViewController.m in Sources */,
+				BD2A75AF1EFB7E33000BDF06 /* PlacemarkConfiguration.m in Sources */,
 				BDEFD4EA1EF6DCEF000571C7 /* MapLocationSelectionController.m in Sources */,
 				BD3C7A0B1EF39AD100B4651B /* ModelViewController.m in Sources */,
 				BD297E6D1EF3F64500FDD144 /* ImageKeyConstants.m in Sources */,
@@ -452,14 +494,18 @@
 				BD3C79F51EF395BE00B4651B /* AppDelegate.m in Sources */,
 				BD3C79FE1EF395BE00B4651B /* MapoHostelBasic.xcdatamodeld in Sources */,
 				BDF0CA631EF51CB400B53D56 /* MapRouteViewController.m in Sources */,
+				BD32F4791EFBA10D00AE3ADE /* UIMapViewTabbedViewController.m in Sources */,
 				BD306F9C1EF76CF10015E952 /* ToHostelDirectionsController.m in Sources */,
 				BDC5F7121EF63722001EEEC4 /* RoomCollectionViewController.m in Sources */,
 				BD2DF5A91EF672C1000A19E8 /* RoomCollectionViewLayout.m in Sources */,
+				BD8146101EFB738600F9A2B6 /* TouristLocationSelectionContainingController.m in Sources */,
 				BD3869E71EF5690C008F0BFB /* ScrollableContentController.m in Sources */,
 				BDFAF9A11EF8C4FC00899ACE /* IntroViewController.m in Sources */,
 				BD3C79F21EF395BE00B4651B /* main.m in Sources */,
 				BD4C86C31EFA31AF00103789 /* ImageCacheTestController.m in Sources */,
 				BDEA1E481EF448A60019AADD /* PhotoListController.m in Sources */,
+				BD2A75B21EFB9350000BDF06 /* TouristLocationMapViewController.m in Sources */,
+				BDE2B6D41EFAC5340070F176 /* HeaderViewConfiguration.m in Sources */,
 				BD4C4D1E1EF7BF2D00B8FFBE /* ListLocationSelectionController.m in Sources */,
 				BD297E6A1EF3F4B700FDD144 /* ImageManager.m in Sources */,
 			);
