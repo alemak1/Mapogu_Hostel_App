@@ -68,7 +68,7 @@
          referenceType = "1">
       </LocationScenarioReference>
       <RoutingCoverageFileReference
-         identifier = "../../MapoHostelBasic/SeoulCoverageFile.geojson">
+         identifier = "../../MapoHostelBasic/Seoul.geojson">
       </RoutingCoverageFileReference>
    </LaunchAction>
    <ProfileAction

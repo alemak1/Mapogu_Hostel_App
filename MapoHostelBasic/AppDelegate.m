@@ -44,7 +44,7 @@ typedef enum TESTABLE_VIEWCONTROLLERS{
 
 @implementation AppDelegate
 
-static BOOL willUseStoryBoard = NO;
+static BOOL willUseStoryBoard = YES;
 
 
 

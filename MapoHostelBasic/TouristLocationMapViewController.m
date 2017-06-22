@@ -164,7 +164,14 @@
             
             NSLog(@"Walking route debug info: %@",[walkingRoute description]);
             
+            [self.mapView removeOverlay:walkingRoute.polyline];
+            
+
+            [self.mapView removeOverlays:self.mapView.overlays];
+            
             [self.mapView addOverlay:walkingRoute.polyline level:MKOverlayLevelAboveRoads];
+            
+        
         }
     }];
 }
@@ -176,6 +183,11 @@
 
 -(void) dismissViewController{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
+    
+    return [[MKOverlayPathRenderer alloc] initWithOverlay:overlay];
 }
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
@@ -221,19 +233,11 @@
     return nil;
 }
 
-/**
--(void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray<MKAnnotationView *> *)views{
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
     
 }
 
 
 
--(void)mapView:(MKMapView *)mapView didAddOverlayRenderers:(NSArray<MKOverlayRenderer *> *)renderers{
-    
-}
-
--(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
-    
-}
-**/
 @end
